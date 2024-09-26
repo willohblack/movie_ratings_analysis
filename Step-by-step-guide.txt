@@ -1,0 +1,64 @@
+Step 1: Set Up Visual Studio Code
+Install Visual Studio Code:
+
+Download and install VS Code from here if you haven't already.
+Install Python:
+
+Make sure you have Python installed on your system. If not, download and install it from the official Python website.
+Ensure you check the box that says "Add Python to PATH" during the installation.
+Install the Python Extension in VS Code:
+
+Open VS Code.
+Go to the Extensions view (Ctrl+Shift+X), search for "Python" by Microsoft, and install it. This extension adds support for Python IntelliSense, linting, debugging, and running Python files.
+Step 2: Open Your Project in VS Code
+Open the Project Folder:
+Go to File > Open Folder... and select your project folder (movie_ratings_analysis).
+This will open the entire folder in the VS Code workspace.
+Step 3: Set Up a Virtual Environment (Recommended)
+Open the Terminal in VS Code:
+
+Go to Terminal > New Terminal or press Ctrl+` to open a terminal window inside VS Code.
+Create a Virtual Environment:
+
+Create a virtual environment in your project folder to keep your dependencies isolated:
+bash
+Copy code
+python -m venv venv
+This command will create a folder named venv inside your project with the virtual environment.
+Activate the Virtual Environment:
+
+Windows:
+bash
+Copy code
+venv\Scripts\activate
+Mac/Linux:
+bash
+Copy code
+source venv/bin/activate
+You should see (venv) at the beginning of the terminal line, indicating that the virtual environment is activated.
+Install Project Dependencies:
+
+Install the required dependencies from the requirements.txt file:
+bash
+Copy code
+pip install -r requirements.txt
+If you haven't created a requirements.txt file, you can create one manually or install individual packages using pip.
+Step 4: Running the Python Program
+Locate the Python File:
+
+In the Explorer panel on the left, navigate to the file you want to run, for example, data_loader.py inside your src/ folder.
+Run the File:
+
+You can run the Python file directly by clicking the Run Python File button in the top right corner of the editor (the green play button).
+Alternatively, you can run the file using the terminal by typing:
+bash
+Copy code
+python src/data_loader.py
+Ensure the path you specify matches the location of the script you want to run.
+Debugging (Optional):
+
+To run the code with debugging, press F5 or go to Run > Start Debugging.
+VS Code will launch the debugger, allowing you to set breakpoints, inspect variables, and step through the code.
+Step 5: View Output and Handle Errors
+Any output, including print statements and errors, will appear in the terminal at the bottom of the VS Code window.
+If you encounter errors like file paths not found, ensure that the file paths specified in your code match the actual location of the files.
